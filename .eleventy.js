@@ -22,6 +22,7 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
+    pathPrefix: "/sdnotes/",
     dir: {
       input: "content",         // Where content pages live
       includes: "../src/includes", // Where partial templates live
