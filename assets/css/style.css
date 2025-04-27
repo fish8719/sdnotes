@@ -1,0 +1,92 @@
+/* Base */
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  background-color: #f9f9f9;
+  color: #222;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  line-height: 1.7;
+}
+
+/* Headers */
+h1, h2, h3, h4 {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #111;
+  margin-top: 2rem;
+}
+
+/* Links */
+a {
+  color: #0077cc;
+  text-decoration: none;
+  border-bottom: 1px solid #0077cc;
+}
+
+a:hover {
+  color: #005999;
+  border-bottom-color: #005999;
+}
+
+/* Status badges */
+.status {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  margin: 0.2em 0;
+  font-size: 0.85em;
+  font-weight: bold;
+  border-radius: 0.25em;
+  color: white;
+}
+
+.status.todo {
+  background-color: #d9534f; /* Red */
+}
+
+.status.wip {
+  background-color: #f0ad4e; /* Orange */
+}
+
+.status.complete {
+  background-color: #5cb85c; /* Green */
+}
+
+.status.partial {
+  background-color: #5bc0de; /* Blue */
+}
+
+/* Footer if needed later */
+footer {
+  margin-top: 4rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #666;
+}
+
+
+.page-status {
+  margin-bottom: 1.5rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Color-tinted titles based on status */
+.page-title.todo {
+  color: #a94442; /* dark red */
+}
+
+.page-title.wip {
+  color: #8a6d3b; /* dark orange */
+}
+
+.page-title.partial {
+  color: #31708f; /* muted blue */
+}
+
+.page-title.complete {
+  color: #3c763d; /* dark green */
+}
+

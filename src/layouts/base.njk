@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title or "SD Notes" }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  
+   <main>
+    <h1 class="page-title{% if status %} {{ status }}{% else %} todo{% endif %}">
+      {{ title }}
+    </h1>
+
+    <div class="page-status">
+      <span class="status {{ status or 'todo' }}">{{ (status or 'todo') | statusLabel }}</span>
+    </div>
+    
+    {{ content | safe }}
+
+    <footer>
+      {% if page.date %}
+        <p><small>Last updated: {{ page.date | date("MMMM d, yyyy") }}</small></p>
+      {% endif %}
+    </footer>
+  </main>
+</body>
+</html>
